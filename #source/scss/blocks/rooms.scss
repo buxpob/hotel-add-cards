@@ -1,0 +1,38 @@
+.rooms__list {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+   padding: 0;
+
+   @media (min-width: $tablet-width) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
+   @media (min-width: $desktop-middle-width) {
+      gap: 20px;
+   }
+
+   @media (min-width: $desktop-width) {
+      gap: 32px;
+   }
+}
+
+.rooms__item {
+   margin-bottom: 32px;
+
+   &:nth-last-child(1) {
+      margin-bottom: 0px;
+   }
+
+   @media (min-width: $tablet-width) {
+      margin-bottom: 37px;
+
+      &:nth-last-child(1) {
+         margin-bottom: 37px;
+      }
+   }
+}

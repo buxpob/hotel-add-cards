@@ -1,0 +1,7 @@
+.main__rooms {
+   margin: 24px auto 0;
+
+   @media (min-width: $tablet-width) {
+      margin-top: 26px;
+   }
+}
