@@ -3,20 +3,13 @@
    min-height: 347px;
    min-width: 288px;
 
-   &--carrent::after {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      content: "";
-      border-radius: 13px;
-      z-index: -1;
-      background: $white-special-opasity;
-   }
-
    @media (min-width: $tablet-width) {
       min-height: 420px;
       min-width: 336px;
+   }
+
+   @media (min-width: $desktop-width) {
+      min-height: 372px;
    }
 }
 
@@ -37,7 +30,7 @@
    z-index: -1;
    width: 215px;
    min-height: 30px;
-   background-image: url("/../img/image.svg");
+   background: url("../img/image.svg");
    background-repeat: no-repeat;
 
    @media (min-width: $tablet-width) {
@@ -46,7 +39,7 @@
    }
 }
 
-.room-card:hover .room-card__offer {
+.room-card__sourse:hover .room-card__offer {
    z-index: 3;
 }
 
@@ -128,7 +121,7 @@
    }
 
    @media (min-width: $desktop-width) {
-      margin: 10px 0 22px;
+      margin: 10px 0 21px;
    }
 }
 
@@ -194,23 +187,35 @@
 
 .room-card__reserve {
    position: absolute;
+   top: 0;
    left: 0;
-   bottom: 0;
    display: flex;
-   align-items: center;
    justify-content: center;
+   align-items: flex-end;
+   width: 100%;
+   height: 100%;
+   border-radius: 13px;
+   z-index: 3;
+   background: $white-special-opasity;
+   cursor: pointer;
+
+   &--current {
+      z-index: -2;
+   }
+}
+
+.room-card__reserve:hover {
+   z-index: 3;
+}
+
+.room-card__reserve-box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    height: 150px;
    width: 100%;
-   font-size: 14px;
-   line-height: 20px;
-   font-weight: normal;
    border-radius: 0 0 13px 13px;
    background-color: $gray;
-   z-index: -1;
-
-   &--carrent {
-      z-index: -1;
-   }
 
    @media (min-width: $tablet-width) {
       height: 162px;
@@ -222,8 +227,12 @@
 }
 
 .room-card__payment {
+   font-size: 14px;
+   line-height: 20px;
+   font-weight: normal;
    text-align: center;
 }
+
 .room-card__payment-link {
    color: $room-link-color;
    text-decoration: none;

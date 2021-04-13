@@ -14,7 +14,7 @@
    min-height: 100%;
    margin: 0 auto;
    min-width: 320px;
-   background: url("/img/bg-mobile.svg");
+   background: url("../img/bg-mobile.svg");
    background-attachment: fixed;
    background-repeat: no-repeat;
    background-size: 100% 100%;
@@ -22,11 +22,11 @@
    background-size: cover;
 
    @media (min-width: $tablet-width) {
-      background-image: url("/img/bg-tablet.svg");
+      background-image: url("../img/bg-tablet.svg");
    }
 
    @media (min-width: $desktop-width) {
-      background-image: url("/img/bg-desktop.svg");
+      background-image: url("../img/bg-desktop.svg");
    }
 }
 
