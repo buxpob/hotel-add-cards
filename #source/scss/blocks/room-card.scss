@@ -2,15 +2,6 @@
    position: relative;
    min-height: 347px;
    min-width: 288px;
-
-   @media (min-width: $tablet-width) {
-      min-height: 420px;
-      min-width: 336px;
-   }
-
-   @media (min-width: $desktop-width) {
-      min-height: 372px;
-   }
 }
 
 .room-card__img {
@@ -27,11 +18,21 @@
    position: absolute;
    top: 20px;
    left: 20px;
-   z-index: -1;
    width: 215px;
    min-height: 30px;
    background: url("../img/image.svg");
    background-repeat: no-repeat;
+   z-index: -1;
+   opacity: 0;
+
+   &--active {
+      opacity: 1;
+   }
+
+   &--opasity {
+      // z-index: -1;
+      opacity: 0;
+   }
 
    @media (min-width: $tablet-width) {
       top: 25px;
@@ -59,9 +60,9 @@
    justify-content: flex-end;
    height: 100%;
    padding: 21px;
-   z-index: 1;
    border-radius: 13px;
    background: $room-bg;
+   z-index: 1;
 
    @media (min-width: $tablet-width) {
       padding: 24px;
@@ -75,6 +76,8 @@
 
 .room-card__title {
    margin: 0;
+   margin-right: auto;
+   padding: 10px 0;
    font-size: 20px;
    font-family: "Roboto", "Arial", sans-serif;
    cursor: pointer;
@@ -101,16 +104,16 @@
 
 .room-card__description {
    max-height: 120px;
-   overflow-y: auto;
-   margin: 12px 0 21px;
+   margin: 2px 0 21px;
    padding-bottom: 20px;
    font-size: 14px;
    line-height: 21px;
    font-weight: normal;
    border-bottom: 1px solid $white-superopasity;
+   overflow-y: auto;
 
    @media (min-width: $tablet-width) {
-      margin: 10px 0 20px;
+      margin: 0 0 20px;
       padding-bottom: 21px;
       font-size: 16px;
       line-height: 24px;
@@ -121,7 +124,7 @@
    }
 
    @media (min-width: $desktop-width) {
-      margin: 10px 0 21px;
+      margin: 0 0 21px;
    }
 }
 
@@ -149,9 +152,9 @@
 
    @media (min-width: $desktop-width) {
       display: inline-block;
-      min-width: 120px;
       margin-bottom: 0;
       margin-right: 23px;
+      min-width: 120px;
    }
 }
 
@@ -195,9 +198,9 @@
    width: 100%;
    height: 100%;
    border-radius: 13px;
-   z-index: 3;
    background: $white-special-opasity;
    cursor: pointer;
+   z-index: 3;
 
    &--current {
       z-index: -2;

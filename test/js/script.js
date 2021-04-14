@@ -1,25 +1,26 @@
-const roomsList = document.querySelector(".rooms__list");
-const listButtons = roomsList.querySelectorAll(".room-card__button");
-const listReserve = roomsList.querySelectorAll(".room-card__reserve");
-const listReserveLink = roomsList.querySelectorAll(".room-card__payment-link");
-const listRoomLink = roomsList.querySelectorAll(".room-card__title-link");
-
-const list = roomsList.querySelectorAll(".room-card");
+const listRooms = document.querySelector(".rooms__list");
+const listButtons = listRooms.querySelectorAll(".room-card__button");
+const listReserveRooms = listRooms.querySelectorAll(".room-card__reserve");
+const listReserveRoomLinks = listRooms.querySelectorAll(".room-card__payment-link");
+const listTitleRoomLinks = listRooms.querySelectorAll(".room-card__title-link");
+const listOfferRooms = listRooms.querySelectorAll(".room-card__offer");
 
 const roomReserve = (el) => {
-   listReserve[el].classList.remove("room-card__reserve--current");
+   listReserveRooms[el].classList.remove("room-card__reserve--current");
+   listOfferRooms[el].classList.add("room-card__offer--opasity");
    listButtons[el].tabIndex = -1;
-   listReserve[el].tabIndex = 0;
-   listReserveLink[el].tabIndex = 0;
-   listRoomLink[el].tabIndex = -1;
+   listReserveRooms[el].tabIndex = 0;
+   listReserveRoomLinks[el].tabIndex = 0;
+   listTitleRoomLinks[el].tabIndex = -1;
 }
 
 const roomCancelReservation = (el) => {
-   listReserve[el].classList.add("room-card__reserve--current");
+   listReserveRooms[el].classList.add("room-card__reserve--current");
+   listOfferRooms[el].classList.remove("room-card__offer--opasity");
    listButtons[el].tabIndex = 0;
-   listReserve[el].tabIndex = -1;
-   listReserveLink[el].tabIndex = -1;
-   listRoomLink[el].tabIndex = 0;
+   listReserveRooms[el].tabIndex = -1;
+   listReserveRoomLinks[el].tabIndex = -1;
+   listTitleRoomLinks[el].tabIndex = 0;
 }
 
 for (let i = 0; i < listButtons.length; i++) {
@@ -27,15 +28,15 @@ for (let i = 0; i < listButtons.length; i++) {
       roomReserve(i);
    };
 
-   listReserve[i].onclick = () => {
+   listReserveRooms[i].onclick = () => {
       roomCancelReservation(i);
    };
 
-   listReserve[i].focus = () => {
+   listReserveRooms[i].focus = () => {
       roomCancelReservation(i);
    };
 
-   listReserve[i].onkeydown = (evt) => {
+   listReserveRooms[i].onkeydown = (evt) => {
       if (evt.key === ("Escape" || "Esc")) {
          roomCancelReservation(i);
       }
