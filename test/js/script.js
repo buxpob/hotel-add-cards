@@ -7,7 +7,7 @@ const listOfferRooms = listRooms.querySelectorAll(".room-card__offer");
 
 const roomReserve = (el) => {
    listReserveRooms[el].classList.remove("room-card__reserve--current");
-   listOfferRooms[el].classList.add("room-card__offer--opasity");
+   listOfferRooms[el].classList.add("room-card__offer--opacity");
    listButtons[el].tabIndex = -1;
    listReserveRooms[el].tabIndex = 0;
    listReserveRoomLinks[el].tabIndex = 0;
@@ -16,7 +16,7 @@ const roomReserve = (el) => {
 
 const roomCancelReservation = (el) => {
    listReserveRooms[el].classList.add("room-card__reserve--current");
-   listOfferRooms[el].classList.remove("room-card__offer--opasity");
+   listOfferRooms[el].classList.remove("room-card__offer--opacity");
    listButtons[el].tabIndex = 0;
    listReserveRooms[el].tabIndex = -1;
    listReserveRoomLinks[el].tabIndex = -1;
