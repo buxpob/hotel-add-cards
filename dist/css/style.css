@@ -1,0 +1,984 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+    ========================================================================== */
+
+/**
+  * Remove the margin in all browsers.
+  */
+
+body {
+  margin: 0;
+}
+
+/**
+  * Render the `main` element consistently in IE.
+  */
+
+main {
+  display: block;
+}
+
+/**
+  * Correct the font size and margin on `h1` elements within `section` and
+  * `article` contexts in Chrome, Firefox, and Safari.
+  */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+    ========================================================================== */
+
+/**
+  * 1. Add the correct box sizing in Firefox.
+  * 2. Show the overflow in Edge and IE.
+  */
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+  * 1. Correct the inheritance and scaling of font size in all browsers.
+  * 2. Correct the odd `em` font sizing in all browsers.
+  */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+    ========================================================================== */
+
+/**
+  * Remove the gray background on active links in IE 10.
+  */
+
+a {
+  background-color: transparent;
+}
+
+/**
+  * 1. Remove the bottom border in Chrome 57-
+  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+  */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+  * Add the correct font weight in Chrome, Edge, and Safari.
+  */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+  * 1. Correct the inheritance and scaling of font size in all browsers.
+  * 2. Correct the odd `em` font sizing in all browsers.
+  */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+  * Add the correct font size in all browsers.
+  */
+
+small {
+  font-size: 80%;
+}
+
+/**
+  * Prevent `sub` and `sup` elements from affecting the line height in
+  * all browsers.
+  */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+    ========================================================================== */
+
+/**
+  * Remove the border on images inside links in IE 10.
+  */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+    ========================================================================== */
+
+/**
+  * 1. Change the font styles in all browsers.
+  * 2. Remove the margin in Firefox and Safari.
+  */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+  * Show the overflow in IE.
+  * 1. Show the overflow in Edge.
+  */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+  * Remove the inheritance of text transform in Edge, Firefox, and IE.
+  * 1. Remove the inheritance of text transform in Firefox.
+  */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+  * Correct the inability to style clickable types in iOS and Safari.
+  */
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+  * Remove the inner border and padding in Firefox.
+  */
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+  * Restore the focus styles unset by the previous rule.
+  */
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+  * Correct the padding in Firefox.
+  */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+  * 1. Correct the text wrapping in Edge and IE.
+  * 2. Correct the color inheritance from `fieldset` elements in IE.
+  * 3. Remove the padding so developers are not caught out when they zero out
+  *    `fieldset` elements in all browsers.
+  */
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+  */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+  * Remove the default vertical scrollbar in IE 10+.
+  */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+  * 1. Add the correct box sizing in IE 10.
+  * 2. Remove the padding in IE 10.
+  */
+
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+  * Correct the cursor style of increment and decrement buttons in Chrome.
+  */
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+  * 1. Correct the odd appearance in Chrome and Safari.
+  * 2. Correct the outline style in Safari.
+  */
+
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+  * Remove the inner padding in Chrome and Safari on macOS.
+  */
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+  * 1. Correct the inability to style clickable types in iOS and Safari.
+  * 2. Change font properties to `inherit` in Safari.
+  */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+    ========================================================================== */
+
+/*
+  * Add the correct display in Edge, IE 10+, and Firefox.
+  */
+
+details {
+  display: block;
+}
+
+/*
+  * Add the correct display in all browsers.
+  */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+    ========================================================================== */
+
+/**
+  * Add the correct display in IE 10+.
+  */
+
+template {
+  display: none;
+}
+
+/**
+  * Add the correct display in IE 10.
+  */
+
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: medium;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  bottom: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+  font-style: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.page__body {
+  position: relative;
+  min-width: 320px;
+  max-width: 1280px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(222, 237, 255, 0.6)), to(rgba(166, 204, 250, 0.5))), url("../img/bg-mobile.svg");
+  background-image: -o-linear-gradient(top, rgba(222, 237, 255, 0.6) 0%, rgba(166, 204, 250, 0.5) 100%), url("../img/bg-mobile.svg");
+  background-image: linear-gradient(180deg, rgba(222, 237, 255, 0.6) 0%, rgba(166, 204, 250, 0.5) 100%), url("../img/bg-mobile.svg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-size: auto, cover;
+}
+
+.page__main {
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__rooms {
+  width: 320px;
+  padding: 24px 16px 20px;
+}
+
+.title {
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.rooms__title {
+  margin-bottom: 24px;
+}
+
+.rooms__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.rooms__item {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.room-card {
+  position: relative;
+  height: 100%;
+  border-radius: 13px;
+}
+
+.room-card:hover {
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.room-card:hover .room-card__offer {
+  display: block;
+}
+
+.room-card--reserved:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.room-card--reserved .room-card__reserve {
+  display: block;
+}
+
+.room-card--reserved:hover .room-card__offer {
+  display: none;
+}
+
+.room-card__img {
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+  border-radius: 13px;
+  z-index: -1;
+}
+
+.room-card__offer {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin-right: 20px;
+  min-width: 215px;
+  height: 30px;
+  border-radius: 3px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.room-card__offer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 36px;
+  background-image: url("../img/offer-img.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.room-card__offer-text {
+  margin: 0;
+  margin-right: 36px;
+  padding: 3px 0 3px 15px;
+  background-color: #ff7647;
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.room-card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 48px 21px 21px 21px;
+  border-radius: 13px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 34, 64, 0.1)), to(#0a2240));
+  background: -o-linear-gradient(top, rgba(10, 34, 64, 0.1) 0%, #0a2240 100%);
+  background: linear-gradient(180deg, rgba(10, 34, 64, 0.1) 0%, #0a2240 100%);
+  width: 288px;
+  min-height: 347px;
+}
+
+.room-card__title {
+  height: auto;
+  margin: 0;
+  margin-right: auto;
+  padding: 30px 0 10px 0;
+  font-size: 20px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.room-card__title-link {
+  padding: 10px 0 10px 0;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.room-card__title-link:hover {
+  text-decoration: underline;
+}
+
+.room-card__title-link:active {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.room-card__description {
+  margin: 2px 0 21px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.room-card__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.room-card__price-text {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.room-card__price-remark {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 17px;
+}
+
+.room-card__price-value {
+  display: inline-block;
+  padding-left: 1px;
+  font-size: 20px;
+  line-height: 35px;
+  vertical-align: center;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #ff4b77;
+}
+
+.room-card__price-currency {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 3px;
+  padding-left: 2px;
+  font-size: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  line-height: 32px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.room-card__reserve {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.room-card__reserve-box {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 150px;
+  width: 100%;
+  border-radius: 0 0 13px 13px;
+  background-color: #3c3e43;
+}
+
+.room-card__payment {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.room-card__payment-link {
+  color: #ff4b77;
+  text-decoration: none;
+}
+
+.room-card__payment-link:hover {
+  text-decoration: underline;
+}
+
+.room-card__payment-link:active {
+  color: #ff97b0;
+  text-decoration: none;
+}
+
+.button {
+  width: 100%;
+  min-height: 42px;
+  padding: 8px 10px 10px 13px;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #f91155;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d8003f;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button:active {
+  color: #f9637c;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media (min-width: 768px) {
+  .page__body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(222, 237, 255, 0.6)), to(rgba(166, 204, 250, 0.5))), url("../img/bg-tablet.svg");
+    background-image: -o-linear-gradient(top, rgba(222, 237, 255, 0.6) 0%, rgba(166, 204, 250, 0.5) 100%), url("../img/bg-tablet.svg");
+    background-image: linear-gradient(180deg, rgba(222, 237, 255, 0.6) 0%, rgba(166, 204, 250, 0.5) 100%), url("../img/bg-tablet.svg");
+  }
+
+  .main__rooms {
+    width: 768px;
+    padding: 27px 34px 0;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 55px;
+  }
+
+  .rooms__title {
+    margin-bottom: 26px;
+  }
+
+  .rooms__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .rooms__item {
+    margin-bottom: 37px;
+  }
+
+  .rooms__item:nth-child(2n) {
+    margin-left: 28px;
+  }
+
+  .room-card {
+    border-radius: 10px;
+  }
+
+  .room-card__img {
+    border-radius: 10px;
+  }
+
+  .room-card__offer {
+    top: 25px;
+    left: 25px;
+  }
+
+  .room-card__info {
+    padding: 30px 24px 24px 24px;
+    border-radius: 10px;
+    width: 336px;
+    min-height: 420px;
+    height: 100%;
+  }
+
+  .room-card__title {
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 10px;
+  }
+
+  .room-card__description {
+    margin: 0 0 16px;
+    padding-bottom: 21px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .room-card__description br {
+    display: none;
+  }
+
+  .room-card__price-text {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .room-card__price-remark {
+    font-size: 19px;
+  }
+
+  .room-card__price-value {
+    line-height: 32px;
+    font-size: 24px;
+    padding-left: 3px;
+  }
+
+  .room-card__price-currency {
+    vertical-align: baseline;
+    font-size: 23px;
+    line-height: 25px;
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #999999;
+    padding-left: 0;
+  }
+
+  .room-card__reserve {
+    border-radius: 10px;
+  }
+
+  .room-card__reserve-box {
+    min-height: 162px;
+  }
+
+  .button {
+    min-height: 48px;
+    padding: 11px 11px 13px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page__body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(222, 237, 255, 0.6)), to(rgba(166, 204, 250, 0.5))), url("../img/bg-desktop.svg");
+    background-image: -o-linear-gradient(top, rgba(222, 237, 255, 0.6) 0%, rgba(166, 204, 250, 0.5) 100%), url("../img/bg-desktop.svg");
+    background-image: linear-gradient(180deg, rgba(222, 237, 255, 0.6) 0%, rgba(166, 204, 250, 0.5) 100%), url("../img/bg-desktop.svg");
+  }
+
+  .main__rooms {
+    width: 1280px;
+    padding: 42px 50px 0;
+  }
+
+  .rooms__title {
+    margin-bottom: 27px;
+  }
+
+  .rooms__item:nth-child(2n) {
+    margin-left: 0;
+  }
+
+  .rooms__item:nth-child(3n) {
+    margin-left: 32px;
+  }
+
+  .rooms__item:nth-child(3n+1) {
+    margin-right: 32px;
+  }
+
+  .rooms__item:last-child {
+    margin-right: 0;
+  }
+
+  .room-card__info {
+    padding: 30px 24px 20px 24px;
+    width: 372px;
+    min-height: 372px;
+  }
+
+  .room-card__description {
+    margin: 0 0 17px;
+  }
+
+  .room-card__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .room-card__price-text {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    max-width: 130px;
+    word-break: break-word;
+  }
+
+  .room-card__reserve-box {
+    min-height: 97px;
+  }
+
+  .button {
+    width: 180px;
+    padding: 11px 24px 13px 25px;
+    border-radius: 5px;
+    margin-top: 2px;
+  }
+}

@@ -1,0 +1,41 @@
+.page {
+  height: 100%;
+  font-style: normal;
+  font-family: $default-font;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $white;
+}
+
+.page__body {
+  position: relative;
+  min-width: 320px;
+  max-width: 1280px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-image: $main-bg-color, url("../img/bg-mobile.svg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-size: auto, cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: $main-bg-color, url("../img/bg-tablet.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: $main-bg-color, url("../img/bg-desktop.svg");
+  }
+}
+
+.page__main {
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

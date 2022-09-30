@@ -1,0 +1,303 @@
+.room-card {
+  position: relative;
+  height: 100%;
+  border-radius: 13px;
+
+  &:hover {
+    box-shadow: 0px 4px 15px $gray-dark;
+  }
+
+  &:hover &__offer {
+    display: block;
+  }
+
+  &--reserved:hover {
+    box-shadow: none;
+  }
+
+  &--reserved &__reserve {
+    display: block;
+  }
+
+  &--reserved:hover &__offer {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-radius: 10px;
+  }
+}
+
+.room-card__img {
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 13px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 10px;
+  }
+}
+
+.room-card__offer {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin-right: 20px;
+  min-width: 215px;
+  height: 30px;
+  border-radius: 3px;
+  overflow: hidden;
+  z-index: 10;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 36px;
+    background-image: url("../img/offer-img.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 25px;
+    left: 25px;
+  }
+}
+
+.room-card__offer-text {
+  margin: 0;
+  margin-right: 36px;
+  padding: 3px 0 3px 15px;
+  background-color: $room-offer-color;
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.room-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 48px 21px 21px 21px;
+  border-radius: 13px;
+  background: $room-bg-color;
+  width: 288px;
+  min-height: 347px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 24px 24px 24px;
+    border-radius: 10px;
+    width: 336px;
+    min-height: 420px;
+    height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 24px 20px 24px;
+    width: 372px;
+    min-height: 372px;
+  }
+}
+
+.room-card__title {
+  height: auto;
+  margin: 0;
+  margin-right: auto;
+  padding: 30px 0 10px 0;
+  font-size: 20px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 10px;
+  }
+}
+
+.room-card__title-link {
+  padding: 10px 0 10px 0;
+  color: $room-link-title-color;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: $room-link-title-color--active;
+  }
+}
+
+.room-card__description {
+  margin: 2px 0 21px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  border-bottom: 1px solid $white-superopasity;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 16px;
+    padding-bottom: 21px;
+    font-size: 16px;
+    line-height: 24px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 17px;
+  }
+}
+
+.room-card__box {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.room-card__price-text {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    max-width: 130px;
+    word-break: break-word;
+  }
+}
+
+.room-card__price-remark {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
+}
+
+.room-card__price-value {
+  display: inline-block;
+  padding-left: 1px;
+  font-size: 20px;
+  line-height: 35px;
+  vertical-align: center;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: $room-price-value-color;
+
+  @media (min-width: $tablet-width) {
+    line-height: 32px;
+    font-size: 24px;
+    padding-left: 3px;
+  }
+}
+
+.room-card__price-currency {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 3px;
+  padding-left: 2px;
+  font-size: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  line-height: 32px;
+  font-weight: 400;
+  color: $room-price-currency-mobile-color;
+
+  @media (min-width: $tablet-width) {
+    vertical-align: baseline;
+    font-size: 23px;
+    line-height: 25px;
+    font-family: "Roboto", "Arial", sans-serif;
+    color: $room-price-currency-tablet-color ;
+    padding-left: 0;
+  }
+}
+
+.room-card__reserve {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  background: $white-special-opasity;
+  z-index: 10;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 10px;
+  }
+}
+
+.room-card__reserve-box {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  width: 100%;
+  border-radius: 0 0 13px 13px;
+  background-color: $gray;
+
+  @media (min-width: $tablet-width) {
+    min-height: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 97px;
+  }
+}
+
+.room-card__payment {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.room-card__payment-link {
+  color: $room-payment-link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $room-payment-link-color--active;
+    text-decoration: none;
+  }
+}

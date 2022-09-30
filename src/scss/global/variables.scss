@@ -1,0 +1,46 @@
+$black: #000000;
+$pink: #f91155;
+$pink-dark: #d8003f;
+$pink-light: #f9637c;
+$pink-special: #ff4b77;
+$pink-opacity: #ff97b0;
+$orange: #ff7647;
+$gray: #3c3e43;
+$gray-light: #999999;
+$gray-special: rgba(0, 0, 0, 0.25);
+$gray-dark: rgba(0, 0, 0, 0.6);
+$white: #ffffff;
+$white-opasity: rgba(255, 255, 255, 0.6);
+$white-light-opasity: rgba(255, 255, 255, 0.5);
+$white-special-opasity: rgba(255, 255, 255, 0.4);
+$white-superopasity: rgba(255, 255, 255, 0.2);
+$blue-dark-gradient: linear-gradient(180deg, rgba(10, 34, 64, 0.1) 0%, #0a2240 100%);
+$blue-light-gradient: linear-gradient(180deg, rgba(222, 237, 255, 0.6) 0%, rgba(166, 204, 250, 0.5) 100%);
+
+$main-bg-color: $blue-light-gradient;
+$room-bg-color: $blue-dark-gradient;
+
+$room-button-bg: $pink;
+$room-button-bg--hover: $pink-dark;
+$room-button-color--active: $pink-light;
+
+$room-link-title-color: $white;
+$room-link-title-color--active: $white-light-opasity;
+
+$room-offer-color: $orange;
+
+$room-price-value-color: $pink-special;
+
+$room-price-currency-mobile-color: $white-opasity;
+$room-price-currency-tablet-color: $gray-light;
+
+$room-payment-link-color: $pink-special;
+$room-payment-link-color--active: $pink-opacity;
+
+
+$default-font: "Open Sans", "Arial", sans-serif;
+
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1280px;

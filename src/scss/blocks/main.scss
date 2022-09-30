@@ -1,0 +1,14 @@
+.main__rooms {
+  width: 320px;
+  padding: 24px 16px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 27px 34px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1280px;
+    padding: 42px 50px 0;
+  }
+}
